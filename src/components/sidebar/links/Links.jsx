@@ -6,7 +6,7 @@ const variants = {
   hidden: {
     transition: {
       staggerChildren: 0.05,
-      staggerDirection: -1,
+      staggerDirection: 1,
     },
   },
   visible: {

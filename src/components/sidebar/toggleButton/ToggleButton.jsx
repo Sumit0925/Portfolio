@@ -2,8 +2,6 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const ToggleButton = ({ setOpen }) => {
-
-
   return (
     <button onClick={() => setOpen((prev) => !prev)}>
       <svg width="23" height="23" viewBox="0 0 23 23">
@@ -22,8 +20,8 @@ const ToggleButton = ({ setOpen }) => {
           strokeLinecap="round"
           d="M 2 9.423 L 20 9.423"
           variants={{
-            hidden: { opacity:1},
-            visible: { opacity:0 },
+            hidden: { opacity: 1 },
+            visible: { opacity: 0 },
           }}
         />
         <motion.path
@@ -33,7 +31,6 @@ const ToggleButton = ({ setOpen }) => {
           variants={{
             hidden: { d: "M 2 16.346 L 20 16.346" },
             visible: { d: "M 3 2.5 L 17 16.346" },
-
           }}
         />
       </svg>
