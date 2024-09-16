@@ -2,8 +2,7 @@ import React, { useState } from "react";
 import "./sidebar.scss";
 import Links from "./links/Links";
 import ToggleButton from "./toggleButton/toggleButton";
-import { delay, motion } from "framer-motion";
-import { clipPath } from "framer-motion/client";
+import { motion } from "framer-motion";
 
 const sidebarVariant = {
   hidden: {
@@ -16,10 +15,10 @@ const sidebarVariant = {
     },
   },
   visible: {
-    clipPath: "circle(12000px at 50px 50px)",
+    clipPath: "circle(1200px at 50px 50px)",
     transition: {
       type: "spring",
-      stiffness: 2,
+      stiffness: 20,
     },
   },
 };
@@ -32,7 +31,6 @@ const Sidebar = () => {
     <>
       <motion.div
         className="sidebar"
-        variants={sidebarVariant}
         animate={open ? "visible" : "hidden"}
       >
         <motion.div className="bg" variants={sidebarVariant}>
