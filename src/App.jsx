@@ -2,12 +2,14 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./App.scss";
 import Navbar from "./components/navbar/Navbar";
+import Hero from "./components/hero/Hero";
 
 const App = () => {
   return (
     <div id="container">
       <section id="HomePage">
         <Navbar />
+        <Hero/>
       </section>
       <section id="Services">Parallax</section>
       <section>Services</section>

@@ -8,7 +8,7 @@ const sidebarVariant = {
   hidden: {
     clipPath: "circle(30px at 50px 50px)",
     transition: {
-      delay: 0.3,
+      delay: 0.5,
       type: "spring",
       stiffness: 400,
       damping: 40,
