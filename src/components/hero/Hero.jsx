@@ -10,12 +10,14 @@ const Hero = () => {
             <h2>SUMIT ANGURAL</h2>
             <h1>Full stack Web Developer</h1>
             <div className="buttons">
-                <button>See the latest Works</button>
+                <button>See the Latest Works</button>
                 <button>Contact Me</button>
             </div>
             <img src="/scroll.png" alt="mouse-image" />
         </div>
-
+        <div className="slidingTextContianer">
+          Web Developer
+        </div>
         </div>
         <div className="image-container">
           <img src="/hero.png" alt="hero-image" />
