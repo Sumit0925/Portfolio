@@ -37,16 +37,20 @@ const Single = ({ item }) => {
     // offset: ["end end", "start start"],
   });
 
-  const y = useTransform(scrollYProgress,["0","1"])
+  const y = useTransform(scrollYProgress, [0, 1], [-300, 300]);
 
   return (
-    <section ref={ref}>
+    <section>
       <div className="container">
-        <img src={item.img} alt="" />
-        <div className="textContainer">
-          <h2>{item.title}</h2>
-          <p>{item.desc}</p>
-          <button>See Demo</button>
+        <div className="wrapper">
+          <div className="imageContainer" ref={ref}>
+            <img src={item.img} alt="" />
+          </div>
+          <motion.div className="textContainer" style={{ y }}>
+            <h2>{item.title}</h2>
+            <p>{item.desc}</p>
+            <button>See Demo</button>
+          </motion.div>
         </div>
       </div>
     </section>
@@ -73,7 +77,7 @@ const Portfolio = () => {
         <motion.div className="progressBar" style={{ scaleX }}></motion.div>
       </div>
       {items.map((item) => {
-        return <Single item={item} />;
+        return <Single item={item} key={item.id} />;
       })}
     </div>
   );
