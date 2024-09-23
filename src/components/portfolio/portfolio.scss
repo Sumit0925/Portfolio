@@ -1,5 +1,6 @@
 .portfolio {
   position: relative;
+
   .progress {
     position: sticky;
     top: 0;
@@ -21,15 +22,16 @@
     align-items: center;
     width: 100%;
     height: 100%;
+    overflow: hidden;
 
     .wrapper {
       max-width: 1366px;
       height: 100%;
       margin: auto;
       display: flex;
-      gap: 50px;
       justify-content: center;
       align-items: center;
+      gap: 50px;
 
       .imageContainer {
         flex: 1;
@@ -48,14 +50,14 @@
         // justify-content: center;
         gap: 30px;
 
-        h2{
+        h2 {
           font-size: 72px;
         }
-        p{
+        p {
           font-size: 20px;
           color: gray;
         }
-        
+
         button {
           padding: 10px;
           width: 200px;
@@ -64,7 +66,6 @@
           background-color: orange;
           cursor: pointer;
         }
-
       }
     }
   }
