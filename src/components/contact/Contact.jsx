@@ -1,6 +1,8 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import "./contact.scss";
 import { motion, useInView } from "framer-motion";
+import emailjs from "@emailjs/browser";
+import { toast } from "react-toastify";
 
 const variants = {
   initial: {
@@ -19,7 +21,46 @@ const variants = {
 
 const Contact = () => {
   const ref = useRef();
+  const formRef = useRef();
   const isInView = useInView(ref, { margin: "-500px" });
+
+  const [data, setData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+
+    setData({
+      ...data,
+      [name]: value,
+    });
+  };
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm("service_i90mbz2", "template_0an259i", formRef.current, {
+        publicKey: "JLrpxBwLn5CJsi1pl",
+      })
+      .then(
+        () => {
+          toast.success("SUCCESS!");
+          setData({
+            name: "",
+            email: "",
+            message: "",
+          });
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+          toast.error("FAILED...");
+        }
+      );
+  };
 
   return (
     <motion.div
@@ -77,18 +118,37 @@ const Contact = () => {
         </motion.div>
 
         <motion.form
+          ref={formRef}
+          onSubmit={sendEmail}
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ delay: 4, duration: 1 }}
         >
-          <input type="text" placeholder="Name" name="name" required/>
-          <input type="email" placeholder="Email" name="email" required/>
+          <input
+            type="text"
+            placeholder="Name"
+            name="name"
+            value={data.name}
+            onChange={handleChange}
+            required
+          />
+          <input
+            type="email"
+            placeholder="Email"
+            name="email"
+            value={data.email}
+            onChange={handleChange}
+            required
+          />
           <textarea
             rows={8}
             name="message"
             id="message"
             placeholder="Message"
-          ></textarea>
+            value={data.message}
+            onChange={handleChange}
+            required
+          />
           <button>Submit</button>
         </motion.form>
       </motion.div>
