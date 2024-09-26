@@ -39,15 +39,32 @@ section {
   overflow-x: clip;
 }
 
-.course {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+// .course {
+//   height: 100vh;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
 
-  .box {
-    height: 200px;
-    width: 200px;
-    background: white;
+//   .box {
+//     height: 200px;
+//     width: 200px;
+//     background: white;
+//   }
+// }
+
+@mixin mobile {
+  @media (max-width:738px) {
+    @content;
   }
 }
+@mixin tablet {
+  @media (max-width:1024px) {
+    @content;
+  }
+}
+@mixin desktop {
+  @media (max-width:1366px) {
+    @content;
+  }
+}
+
