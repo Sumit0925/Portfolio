@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./sidebar.scss";
 import Links from "./links/Links";
-import ToggleButton from "./toggleButton/toggleButton";
+import ToggleButton from "./toggleButton/ToggleButton";
 import { motion } from "framer-motion";
 
 const sidebarVariant = {
@@ -26,13 +26,9 @@ const sidebarVariant = {
 const Sidebar = () => {
   const [open, setOpen] = useState(false);
 
-
   return (
     <>
-      <motion.div
-        className="sidebar"
-        animate={open ? "visible" : "hidden"}
-      >
+      <motion.div className="sidebar" animate={open ? "visible" : "hidden"}>
         <motion.div className="bg" variants={sidebarVariant}>
           <Links />
         </motion.div>
