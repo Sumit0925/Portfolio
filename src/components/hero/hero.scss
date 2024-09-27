@@ -1,4 +1,4 @@
-@import "../../app.scss";
+@import "../../App.scss";
 .hero {
   height: calc(100vh - 100px);
   overflow: hidden;
@@ -19,7 +19,7 @@
       justify-content: center;
       gap: 40px;
 
-      @include mobile{
+      @include mobile {
         height: 50%;
         width: 100%;
         align-items: center;
@@ -33,24 +33,24 @@
         letter-spacing: 10px;
       }
 
-      h1{
+      h1 {
         font-size: 88px;
 
-        @include mobile{
+        @include mobile {
           font-size: 36px;
         }
       }
-      .buttons{
+      .buttons {
         z-index: 99;
-        button{
-            padding: 20px;
-            border: 1px solid white;
-            border-radius: 10px;
-            background-color: transparent;
-            color: white;
-            margin-right: 20px;
-            font-weight: 300;
-            cursor: pointer;
+        button {
+          padding: 20px;
+          border: 1px solid white;
+          border-radius: 10px;
+          background-color: transparent;
+          color: white;
+          margin-right: 20px;
+          font-weight: 300;
+          cursor: pointer;
         }
       }
 
@@ -60,7 +60,7 @@
     }
   }
 
-  .slidingTextContianer{
+  .slidingTextContianer {
     position: absolute;
     font-size: 50vh;
     bottom: -13%;
@@ -70,7 +70,7 @@
     width: 50%;
     font-weight: bold;
 
-    @include mobile{
+    @include mobile {
       font-size: 200px;
       bottom: -1%;
     }
@@ -82,14 +82,14 @@
     top: 0;
     right: 0;
 
-    @include mobile{
+    @include mobile {
       height: 50%;
       width: 100%;
       top: unset;
       bottom: 0;
     }
 
-    img{
+    img {
       height: 100%;
       width: 100%;
       object-fit: cover;
