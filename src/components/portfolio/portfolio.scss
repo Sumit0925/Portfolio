@@ -16,9 +16,9 @@
       font-size: 1.5rem;
     }
 
-    @include mobile_MH {
-      padding-top: calc(100vh - 80px);
-    }
+    // @include mobile_MH {
+    //   padding-top: calc(100vh - 80px);
+    // }
 
     .progressBar {
       height: 10px;
