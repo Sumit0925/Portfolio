@@ -57,6 +57,13 @@ section {
     @content;
   }
 }
+
+@mixin mobile_MH {
+  @media (max-height: 750px) {
+    @content;
+  }
+}
+
 @mixin tablet {
   @media (max-width:1024px) {
     @content;

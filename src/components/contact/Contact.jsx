@@ -90,7 +90,7 @@ const Contact = () => {
         <motion.div
           className="phoneSvg"
           initial={{ opacity: 1 }}
-          whileInView={{ opacity: 0 }}
+          whileInView={{ opacity: 0, y:-500 }}
           transition={{ delay: 3, duration: 1 }}
         >
           <motion.svg width="450px" height="450px" viewBox="0 0 32.666 32.666">
@@ -121,8 +121,8 @@ const Contact = () => {
         <motion.form
           ref={formRef}
           onSubmit={sendEmail}
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
+          initial={{ opacity: 0, y:500 }}
+          whileInView={{ opacity: 1 , y:0 }}
           transition={{ delay: 4, duration: 1 }}
         >
           <input
@@ -150,7 +150,7 @@ const Contact = () => {
             onChange={handleChange}
             required
           />
-          <button>Submit</button>
+          <motion.button whileTap={{scale:0.9}}>Submit</motion.button>
         </motion.form>
       </motion.div>
     </motion.div>
