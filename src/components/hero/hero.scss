@@ -10,6 +10,10 @@
     height: 100%;
     margin: auto;
 
+    @include tablet {
+      margin: 0 30px;
+    }
+
     .text-container {
       z-index: 9999;
       height: 100%;
@@ -27,6 +31,15 @@
         gap: 20px;
       }
 
+      @include tablet {
+        height: 70%;
+        width: 100%;
+        justify-content: center;
+        // align-items: center;
+        // text-align: center;
+        gap: 20px;
+      }
+
       h2 {
         font-size: 30px;
         color: rebeccapurple;
@@ -38,6 +51,10 @@
 
         @include mobile {
           font-size: 36px;
+        }
+
+        @include tablet {
+          font-size: 2.25rem;
         }
       }
       .buttons {
@@ -74,6 +91,11 @@
       font-size: 200px;
       bottom: -1%;
     }
+
+    @include tablet {
+      font-size: 15rem;
+      bottom: -1%;
+    }
   }
 
   .image-container {
@@ -92,7 +114,11 @@
     img {
       height: 100%;
       width: 100%;
-      object-fit: cover;
+      object-fit: contain;
+
+      @include mobile {
+        object-fit: contain;
+      }
     }
   }
 }

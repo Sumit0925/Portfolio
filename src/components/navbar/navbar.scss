@@ -2,6 +2,8 @@
 
 .navbar {
   height: 100px;
+  position: relative;
+  // margin: 0 100px;
 
   .wrapper {
     max-width: 1366px;
@@ -11,6 +13,7 @@
     align-items: center;
     height: 100%;
     width: 100%;
+    
 
     @include mobile {
       justify-content: flex-end;
