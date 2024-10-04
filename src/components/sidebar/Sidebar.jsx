@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 const sidebarVariant = {
   hidden: {
-    clipPath: "circle(25px at 30px 35px)",
+    clipPath: "circle(25px at 35px 35px)",
     transition: {
       delay: 0.5,
       type: "spring",
