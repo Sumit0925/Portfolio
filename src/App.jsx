@@ -8,13 +8,15 @@ import Services from "./components/services/Services";
 import Portfolio from "./components/portfolio/Portfolio";
 import Contact from "./components/contact/Contact";
 import Cursor from "./components/cursor/Cursor";
+import Sidebar from "./components/sidebar/Sidebar";
 
 const App = () => {
   return (
     <div id="container">
       <Cursor />
+      <Navbar />
+      <Sidebar />
       <section id="HomePage">
-        <Navbar />
         <Hero />
       </section>
       <section id="Services">

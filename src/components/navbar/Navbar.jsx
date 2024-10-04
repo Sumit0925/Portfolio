@@ -7,7 +7,7 @@ const Navbar = () => {
   return (
     <>
       <div className="navbar">
-        <Sidebar />
+        {/* <Sidebar /> */}
 
         <div className="wrapper">
           <motion.span
@@ -17,11 +17,29 @@ const Navbar = () => {
           >
             Sumit
           </motion.span>
+
+          <div className="navlinks">
+            
+              <li>
+                <a href="#">Home</a>
+              </li>
+              <li>
+                <a href="#">Services</a>
+              </li>
+              <li>
+                <a href="#">Portfolio</a>
+              </li>
+              <li>
+                <a href="#">Contact</a>
+              </li>
+            
+          </div>
+
           <div className="social">
             <a href="">
               <img src="/facebook.png" alt="" />
             </a>
-            <a href="">
+            {/* <a href="">
               <img src="/instagram.png" alt="" />
             </a>
             <a href="">
@@ -29,7 +47,7 @@ const Navbar = () => {
             </a>
             <a href="">
               <img src="/dribbble.png" alt="" />
-            </a>
+            </a> */}
           </div>
         </div>
       </div>

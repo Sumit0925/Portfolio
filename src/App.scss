@@ -8,10 +8,11 @@
 html {
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
-  // font-size: 62.5%;
+  font-size: 62.5%;
 }
 
 body {
+  margin: 0;
     // width: 100vw;
   background-color: #0c0c1d;
   color: lightgray;
@@ -24,12 +25,30 @@ body {
 
 // }
 
+.container {
+  max-width: 140rem;
+  padding: 4rem 2.4rem;
+  margin: 0 auto;
+}
+
+
 
 a {
   text-decoration: none;
   color: inherit;
+  font-weight: 500;
+  font-size: 1.8rem;
 }
 
+h1 {
+  font-size: 5.4rem;
+  line-height: 1.1;
+  font-weight: bold;
+}
+
+li{
+  list-style: none;
+}
 
 
 section {
@@ -38,6 +57,7 @@ section {
   scroll-snap-align: center;
   overflow-x: clip;
 }
+
 
 // .course {
 //   height: 100vh;

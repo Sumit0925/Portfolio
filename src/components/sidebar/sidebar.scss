@@ -47,13 +47,18 @@
 // }
 
 .sidebar {
+  display: none;
   position: relative;
-  display: flex;
+  // display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: white;
   color: black;
+
+  @include mobile {
+    display: flex;
+  }
 
   .bg {
     z-index: 999;
@@ -99,8 +104,8 @@
     height: 50px;
     border-radius: 50%;
     position: fixed;
-    top: 25px;
-    left: 25px;
+    top: 13px;
+    left: 5px;
     background-color: transparent;
     border: none;
     cursor: pointer;
