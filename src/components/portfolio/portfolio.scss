@@ -52,15 +52,15 @@
     margin: 0 auto;
     width: 100%;
     // height: 100vh;
-    height: 100%;
+    // height: 100%;
     overflow: hidden;
 
     .wrapper {
       max-width: 140rem;
       padding: 4rem 2.4rem;
       // height: 100vh;
-      height: 100%;
-      margin: auto;
+      // height: 100%;
+      margin: 0 auto;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -70,7 +70,7 @@
         flex-direction: column;
         width: 100%;
         align-content: center;
-        padding-top: 10rem;
+        padding-top: 15rem;
         gap: 10px;
       }
 
