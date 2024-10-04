@@ -27,8 +27,7 @@
       padding-top: 6.1rem;
     }
 
-    h1{
-
+    h1{ 
       @include mobile {
         font-size: 4rem;
       }
@@ -47,7 +46,7 @@
 
   .p-container {
     max-width: 140rem;
-    padding: 4rem 2.4rem;
+    // padding: 4rem 2.4rem 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -57,12 +56,16 @@
     height: 100%;
     overflow: hidden;
 
+    @include mobile {
+      padding: 4rem 2.4rem;
+    }
+
     .wrapper {
       // max-width: 140rem;
-      // padding: 10rem 0;
+      padding: 0 2.4rem;
       // height: 100vh;
-      // height: 100%;
-      padding-top: 9rem;
+      height: 100%;
+      // padding-top: 9rem;
       margin: 0 auto;
       display: flex;
       justify-content: center;
@@ -70,18 +73,20 @@
       gap: 50px;
 
       @include mobile {
+        height: unset;
         flex-direction: column;
         width: 100%;
         // align-content: center;
         // justify-content: center;
         // align-items: center;
         // margin-top: 14rem;
-        padding-top:4rem ;
-        gap: 10px;
+        padding: 0;
+        padding-top:4.2rem ;
+        gap: 20px;
       }
 
       @include mobile_MH {
-        gap: 10px;
+        gap: 20px;
       }
 
       // @include tablet {
@@ -102,7 +107,6 @@
           height: 100%;
           width: 100%;
           object-fit: cover;
-          padding: 10px 0;
 
           @include mobile {
             object-fit: contain;
@@ -119,6 +123,7 @@
         display: flex;
         flex-direction: column;
         // justify-content: center;
+        // padding-bottom: 25rem;
         gap: 30px;
 
         @include mobile {
