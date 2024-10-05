@@ -23,36 +23,91 @@
     height: 100%;
     // width: 100%;
     z-index: 999;
-    
 
     @include mobile {
       justify-content: flex-end;
-      padding:20px;
+      padding: 20px;
     }
 
     span {
-      font-size: 1.8rem;
-      font-weight: bold;
-      // margin-left: 10px;
+      // font-size: 2rem;
+      // font-weight: bold;
+      margin-left: 8px;
+      // color: #E9F3FD;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img{
+        width: 7.5rem;
+        // height: 2rem;
+      }
 
       @include mobile {
         display: none;
       }
     }
 
-    .navlinks{
+    .navlinks {
       display: flex;
-      gap: 3rem;
+      gap: 5rem;
+      color: #a0a0a0;
+
+      li {
+        position: relative;
+        padding: 0 5px;
+
+        ::before,
+        ::after {
+          content: "";
+          position: absolute;
+          height: 3px;
+          width: 0;
+          background-color: #E9F3FD;
+          transition: 0.5s ease;
+        }
+
+        ::before {
+          right: 0;
+          top: -5px;
+        }
+
+        ::after {
+          left: 0;
+          bottom: -5px;
+          height: 3px;
+        }
+
+        :hover {
+          color: #E9F3FD;
+        }
+
+        :hover::after,
+        :hover::before {
+          width: 100%;
+          
+        }
+      }
+
+      @include tablet {
+        gap: 3rem;
+      }
     }
 
-    .social {
+    .social{
       display: flex;
+      justify-content: center;
       align-items: center;
-      gap: 20px;
+      
+      a {
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
-      img{
-        width: 18px;
-        height: 18px;
+        svg{
+          font-size: 2.5rem;
+        }
       }
     }
   }

@@ -62,7 +62,12 @@
     }
 
     .item {
-      
+      font-size: 1.5rem;
+
+      @include mobile {
+        font-size: unset;
+      }
+
       @include tablet {
         font-size: 1.5rem;
       }
