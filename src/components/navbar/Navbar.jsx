@@ -14,29 +14,29 @@ const Navbar = () => {
             transition={{ duration: 0.5 }}
           >
             {/* Sumit */}
-            <img src="/sumitLogo.png" alt="logo" />
+            <a href="/">
+              <img src="/sumitLogo.png" alt="logo" />
+            </a>
           </motion.span>
 
           <div className="navlinks">
-            
-              <li>
-                <a href="#">Home</a>
-              </li>
-              <li>
-                <a href="#">Services</a>
-              </li>
-              <li>
-                <a href="#">Portfolio</a>
-              </li>
-              <li>
-                <a href="#">Contact</a>
-              </li>
-            
+            <li>
+              <a href="#HomePage">Home</a>
+            </li>
+            <li>
+              <a href="#Services">Services</a>
+            </li>
+            <li>
+              <a href="#Portfolio">Portfolio</a>
+            </li>
+            <li>
+              <a href="#Contact">Contact Me</a>
+            </li>
           </div>
 
           <div className="social">
             <a title="GitHub" href="https://github.com/Sumit0925">
-              <FaGithub/>
+              <FaGithub />
             </a>
           </div>
         </div>

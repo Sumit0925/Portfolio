@@ -11,19 +11,27 @@
     padding: 4rem 2.4rem;
     height: 100%;
     margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    @include mobile{
+      flex-direction: column;
+    }
 
     @include tablet {
       margin: 0 30px;
-
     }
 
     .text-container {
-      z-index: 9999;
+      flex: 1.5;
+      z-index: 99;
       height: 100%;
-      width: 60%;
+      // width: 60%;
       display: flex;
       flex-direction: column;
       justify-content: center;
+      // align-items: center;
       gap: 40px;
 
       @include mobile {
@@ -32,6 +40,7 @@
         align-items: center;
         text-align: center;
         gap: 20px;
+        order: 2;
       }
 
       @include tablet {
@@ -41,6 +50,7 @@
         // align-items: center;
         // text-align: center;
         gap: 20px;
+        padding-top: 4rem;
       }
 
       h2 {
@@ -78,6 +88,76 @@
         width: 50px;
       }
     }
+
+    .image-container {
+      flex: 1;
+      height: 100%;
+      // position: absolute;
+      top: 0;
+      right: 0;
+      // overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      // padding: 4rem;
+      position: relative;
+      
+      @include mobile {
+        order: 1;
+        height: 50%;
+        // width: 50%;
+        top: unset;
+        bottom: 0;
+      }
+      .container-img {
+        height: 49rem;
+        width: 49rem;
+        // padding: 1rem;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        mix-blend-mode: lighten;
+        position: absolute;
+
+        @include mobile {
+          height: 25rem ;
+          width: 25rem;
+          justify-content: center;
+          align-items: center;
+        }
+
+        @include tablet {
+          height: 27rem;
+          width: 27rem;
+        }
+        img { 
+          height: 100%;
+          width: 100%;
+          object-fit: contain;
+
+          @include mobile {
+            object-fit: contain;
+          }
+        }
+        .circleSvg{
+          position: absolute;
+          // height: 49rem;
+          // width: 49rem;
+  
+          // @include mobile{
+          //   height: 25rem;
+          //   width: 25rem;
+          // }
+          // @include tablet{
+          //   height: 27rem;
+          //   width: 27rem;
+          // }
+          
+        }
+      }
+    }
   }
 
   .slidingTextContianer {
@@ -98,30 +178,6 @@
     @include tablet {
       font-size: 15rem;
       bottom: -1%;
-    }
-  }
-
-  .image-container {
-    height: 100%;
-    position: absolute;
-    top: 0;
-    right: 0;
-
-    @include mobile {
-      height: 50%;
-      width: 100%;
-      top: unset;
-      bottom: 0;
-    }
-
-    img {
-      height: 100%;
-      width: 100%;
-      object-fit: contain;
-
-      @include mobile {
-        object-fit: contain;
-      }
     }
   }
 }
