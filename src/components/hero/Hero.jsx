@@ -79,7 +79,7 @@ const Hero = () => {
               transition={{ duration: 2, ease: "easeInOut" }}
               className="container-img"
             >
-              <img src="/hero.png" alt="hero-image" />
+              <img src="/sumit-img.png" alt="hero-image" />
               <motion.svg
                 className="circleSvg"
                 fill="transparent"
@@ -92,7 +92,7 @@ const Hero = () => {
                   r="250"
                   // stroke="#00ff99"
                   stroke="#663399"
-                  strokeWidth="4"
+                  strokeWidth="5"
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   initial={{ strokeDasharray: "24 10 0 0" }}
