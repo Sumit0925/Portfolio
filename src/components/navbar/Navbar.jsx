@@ -24,7 +24,7 @@ const Navbar = () => {
               <a href="#HomePage">Home</a>
             </li>
             <li>
-              <a href="#Services">Services</a>
+              <a href="#About">About</a>
             </li>
             <li>
               <a href="#Portfolio">Portfolio</a>
@@ -35,7 +35,7 @@ const Navbar = () => {
           </div>
 
           <div className="social">
-            <a title="GitHub" href="https://github.com/Sumit0925">
+            <a title="GitHub" href="https://github.com/Sumit0925" target="_blank">
               <FaGithub />
             </a>
           </div>

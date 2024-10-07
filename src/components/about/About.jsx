@@ -1,22 +1,23 @@
 import { useState } from "react";
 import "./about.scss";
-import Services from "../services/Services";
+import Education from "./Education";
+
 
 const content = [
   [
-    "React is extremely popular",
-    "It makes building complex, interactive UIs a breeze",
-    "It's powerful & flexible",
-    "It has a very active and versatile ecosystem",
-    "It makes building complex, interactive UIs a breeze",
-    "It's powerful & flexible",
-    // <Services/>
+    // "React is extremely popular",
+    // "It makes building complex, interactive UIs a breeze",
+    // "It's powerful & flexible",
+    // "It has a very active and versatile ecosystem",
+    // "It makes building complex, interactive UIs a breeze",
+    // "It's powerful & flexible",
+    <Education/>
   ],
   [
-    "Components, JSX & Props",
-    "State",
-    "Hooks (e.g., useEffect())",
-    "Dynamic rendering",
+    // "Components, JSX & Props",
+    // "State",
+    // "Hooks (e.g., useEffect())",
+    // "Dynamic rendering",
   ],
   [
     "Official web page (react.dev)",
@@ -44,26 +45,26 @@ const About = () => {
               className={activeContentIndex === 0 ? "active" : ""}
               onClick={() => setActiveContentIndex(0)}
             >
-              Why React?
+              Education
             </button>
             <button
               className={activeContentIndex === 1 ? "active" : ""}
               onClick={() => setActiveContentIndex(1)}
             >
-              Core Features
+              Skills
             </button>
-            <button
+            {/* <button
               className={activeContentIndex === 2 ? "active" : ""}
               onClick={() => setActiveContentIndex(2)}
             >
               Related Resources
-            </button>
+            </button> */}
           </menu>
         <div id="tabs">
           <div id="tab-content">
             <ul>
               {content[activeContentIndex].map((item,index) => (
-                <li key={index}>{item}</li>
+                <div key={index}>{item}</div>
               ))}
             </ul>
           </div>
