@@ -79,7 +79,7 @@ const Hero = () => {
               transition={{ duration: 2, ease: "easeInOut" }}
               className="container-img"
             >
-              <img src="/sumit-img.png" alt="hero-image" />
+              <img src="/sumit-photo.png" alt="hero-image" />
               <motion.svg
                 className="circleSvg"
                 fill="transparent"
