@@ -1,3 +1,5 @@
+@import "../../App.scss";
+
 .Education {
   height: 100%;
   display: flex;
@@ -24,6 +26,12 @@
       // top: 20px;
       background-color: white;
 
+      @include mobile {
+        height: 50px;
+        width: 50px;
+        left: -25px;
+      }
+
       img {
         height: 100%;
         width: 100%;
@@ -46,17 +54,29 @@
 
       .time {
         font-size: 1.5rem;
+
+        @include mobile {
+            font-size: 1.3rem;
+        }
       }
 
       .heading {
         font-size: 2rem;
         font-weight: bold;
         color: white;
+
+        @include mobile {
+            font-size: 1.8rem;
+        }
       }
 
       h4 {
         font-size: 1.8rem;
         font-weight: normal;
+
+        @include mobile {
+            font-size: 1.5rem;
+        }
       }
 
       li {
@@ -64,6 +84,10 @@
         list-style-position: inside;
         font-size: 1.8rem;
         color: #cbcfd5;
+
+        @include mobile {
+            font-size: 1.5rem;
+        }
       }
     }
   }

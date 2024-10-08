@@ -102,13 +102,14 @@ menu button {
   background-color: transparent;
   border: none;
   //   border-bottom-color: #48d9f3;
-  color: #e0eff1;
+  color: #bcc3c4;
   //   border-radius: 4px 4px 0 0;
   border-radius: 4px;
   //   border: 2px solid white;
   padding: 0.75rem 1rem;
   cursor: pointer;
   transition: all 0.2s ease-out;
+  font-weight: 400;
 
   @include mobile {
     width: 50rem;
@@ -123,6 +124,7 @@ menu button.active {
   //   color: #273133;
   color: black;
   border-color: orange;
+  font-weight: 500;
 }
 
 #tab-content {
