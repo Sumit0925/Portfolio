@@ -1,23 +1,15 @@
 import { useState } from "react";
 import "./about.scss";
 import Education from "./Education";
+import Skills from "./Skills";
 
 
 const content = [
   [
-    // "React is extremely popular",
-    // "It makes building complex, interactive UIs a breeze",
-    // "It's powerful & flexible",
-    // "It has a very active and versatile ecosystem",
-    // "It makes building complex, interactive UIs a breeze",
-    // "It's powerful & flexible",
     <Education/>
   ],
   [
-    // "Components, JSX & Props",
-    // "State",
-    // "Hooks (e.g., useEffect())",
-    // "Dynamic rendering",
+    <Skills/>
   ],
   [
     "Official web page (react.dev)",
