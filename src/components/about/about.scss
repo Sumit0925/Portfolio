@@ -17,6 +17,7 @@
 
   @include mobile {
     padding: 2rem;
+    height: fit-content;
   }
 
   .about-wrapper {
@@ -26,11 +27,12 @@
     justify-content: center;
     align-items: start;
     gap: 1rem;
-    margin-top: 5rem;
+    margin-top: 6rem;
     // margin-bottom: 5rem;
 
     @include mobile {
       flex-direction: column;
+      // margin-top: 6rem;
     }
   }
 }
@@ -62,12 +64,15 @@ header p {
   // max-width: 32rem;
 
   width: 100%;
-  height: 100%;
+  max-height: 100%;
+  height: fit-content;
   //   margin: 2rem 0;
   // overflow: hidden;
   overflow-y: scroll;
   overflow-x: hidden;
   box-sizing: content-box;
+  border: 1px solid gray;
+  border-radius: 10px;
 }
 
 #tabs::-webkit-scrollbar {
@@ -123,9 +128,10 @@ menu button.active {
 #tab-content {
 //   background-color: #2d3942;
 //   border-radius: 0 4px 4px 4px;
-border-radius: 10px;
-  border: 1px solid gray;
-  padding: 0 1rem;
+
+
+  // padding: 0 1rem;
+  padding-left: 4rem;
   height: 100%;
 }
 
