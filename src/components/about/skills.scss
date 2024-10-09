@@ -78,6 +78,7 @@
         font-size: 6rem;
         border-radius: 5px;
         font-weight: 500;
+        cursor: default;
         
         @include mobile {
           font-size: 3.5rem;
