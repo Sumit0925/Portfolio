@@ -1,28 +1,32 @@
 import React, { useRef } from "react";
 import "./portfolio.scss";
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
+import { CiGlobe } from "react-icons/ci";
+import { FaGithub } from "react-icons/fa";
 
 const items = [
   {
     id: 1,
     title: "TrendyMart",
     img: "/TrendyMart.png",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+    desc: "Created a full-stack online Shopping Store that allows users to browse, purchase, manage their orders securely while ensuring a seamless user experience.",
     site: "https://trendy-mart-site.onrender.com",
+    source: "https://github.com/Sumit0925/Trendy_Mart",
   },
   {
     id: 2,
     title: "Dev Technical",
     img: "/DevTechnical.png",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+    desc: "Created a full-stack online Service Website securely using JWT authentication. Integrated Context API for efficient state management across the application, ensuring a seamless user experience.",
     site: "https://dev-technical-project-frontend.onrender.com/",
+    source: "https://github.com/Sumit0925/Mern_Porject",
   },
   {
     id: 3,
     title: "Carrer Launch",
     img: "/CarrerLaunch.png",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
-    site: "",
+    desc: "Carrer Launch is a Training and Placement Website for students to remain up to date about placement opportunities. It has easy-to-use layout for better and seamless user experience.",
+    source: "https://github.com/Sumit0925/CarrerLaunch",
   },
   // {
   //   id: 4,
@@ -55,11 +59,16 @@ const Single = ({ item }) => {
               <p>{item.desc}</p>
             </div>
 
-            <button>
-              <a href={item.site} target="_blank">
-                See Demo
+            <div className="buttons">
+              <a href={item.source} target="_blank">
+                <button><FaGithub className="icon"/> Source</button>
               </a>
-            </button>
+              {item.site && (
+                <a href={item.site} target="_blank">
+                  <button><CiGlobe className="icon"></CiGlobe> Website</button>
+                </a>
+              )}
+            </div>
           </motion.div>
         </div>
       </div>

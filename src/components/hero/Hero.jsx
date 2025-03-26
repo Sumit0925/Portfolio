@@ -1,6 +1,7 @@
 import React from "react";
 import "./hero.scss";
 import { motion } from "framer-motion";
+import { IoDocumentText } from "react-icons/io5";
 
 const textVariants = {
   initial: {
@@ -39,6 +40,21 @@ const slidingVariant = {
   },
 };
 
+// const handleDownload = () => {
+//   const resumeUrl = "Resume.pdf"; // Update with the correct path
+//   const link = document.createElement("a");
+//   link.href = resumeUrl;
+//   link.setAttribute("download", "Your_Resume.pdf");
+//   document.body.appendChild(link);
+//   link.click();
+//   document.body.removeChild(link);
+// };
+
+const handleView = () => {
+  const resumeUrl = "/Resume.pdf"; // Update with the correct path
+  window.open(resumeUrl, "_blank");
+};
+
 const Hero = () => {
   return (
     <>
@@ -55,10 +71,13 @@ const Hero = () => {
               Full stack Web Developer
             </motion.h1>
             <motion.div className="buttons" variants={textVariants}>
-              <motion.button variants={textVariants}>
-                See the Latest Works
+              <motion.button className="resume_button" variants={textVariants} onClick={handleView}>
+                Resume
+                {/* <span> */}
+                  <IoDocumentText className="icon" />
+                {/* </span> */}
               </motion.button>
-              <motion.button variants={textVariants}>Contact Me</motion.button>
+              {/* <motion.button variants={textVariants}>Contact Me</motion.button> */}
             </motion.div>
             <motion.img
               variants={textVariants}

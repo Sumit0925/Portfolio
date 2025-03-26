@@ -27,7 +27,7 @@
       padding-top: 6.1rem;
     }
 
-    h1{ 
+    h1 {
       @include mobile {
         font-size: 4rem;
       }
@@ -35,7 +35,6 @@
       @include tablet {
         font-size: 4.5rem;
       }
-      
     }
 
     .progressBar {
@@ -81,7 +80,7 @@
         // align-items: center;
         // margin-top: 14rem;
         padding: 0;
-        padding-top:4.2rem ;
+        padding-top: 4.2rem;
         gap: 20px;
       }
 
@@ -174,14 +173,36 @@
             }
           }
         }
+        .buttons {
+          display: flex;
+          gap: 1rem;
+          a {
+            // padding: 10px;
+            // width: 100px;
+            // border: none;
+            // border-radius: 10px;
+            // background-color: orange;
+            // cursor: pointer;
+            button {
+              font-weight: 500;
+              font-size: 1.8rem;
+              padding: 10px;
+              width: 120px;
+              border: none;
+              border-radius: 10px;
+              background-color: orange;
+              cursor: pointer;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              gap: 0.5rem;
 
-        button {
-          padding: 10px;
-          width: 200px;
-          border: none;
-          border-radius: 10px;
-          background-color: orange;
-          cursor: pointer;
+
+              .icon{
+                font-size: 2rem;
+              }
+            }
+          }
         }
       }
     }
