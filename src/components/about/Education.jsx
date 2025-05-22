@@ -12,7 +12,7 @@ const Education = () => {
           <div className="time">
             <span>Sep 2020</span>
             <span> - </span>
-            <span>July 2024</span>
+            <span>Oct 2024</span>
           </div>
           <div className="heading">
             Government College of Engineering and Technology Jammu
