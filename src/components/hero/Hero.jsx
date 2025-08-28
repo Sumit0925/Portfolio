@@ -51,7 +51,7 @@ const slidingVariant = {
 // };
 
 const handleView = () => {
-  const resumeUrl = "/Sumit_Resume_1.pdf"; // Update with the correct path
+  const resumeUrl = "/Resume_Sumit_Upload.pdf"; // Update with the correct path
   window.open(resumeUrl, "_blank");
 };
 
