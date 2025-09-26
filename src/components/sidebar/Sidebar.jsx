@@ -28,6 +28,9 @@ const Sidebar = () => {
 
   return (
     <>
+      {/* Overlay */}
+      {open && <div className="overlay" onClick={() => setOpen(false)}></div>}
+
       <motion.div className="sidebar" animate={open ? "visible" : "hidden"}>
         <motion.div className="bg" variants={sidebarVariant}>
           <Links />

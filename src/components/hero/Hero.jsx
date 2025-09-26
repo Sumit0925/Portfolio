@@ -2,6 +2,8 @@ import React from "react";
 import "./hero.scss";
 import { motion } from "framer-motion";
 import { IoDocumentText } from "react-icons/io5";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { GoMail } from "react-icons/go";
 
 const textVariants = {
   initial: {
@@ -69,15 +71,50 @@ const Hero = () => {
             <motion.h2 variants={textVariants}>SUMIT ANGURAL</motion.h2>
             <motion.h1 variants={textVariants}>
               Full stack Web Developer
+              <motion.p variants={textVariants}>
+                With expertise in both front-end and back-end development.
+                Passionate about building scalable, user-focused applications
+                with problem-solving ability and adaptability.
+              </motion.p>
             </motion.h1>
             <motion.div className="buttons" variants={textVariants}>
-              <motion.button className="resume_button" variants={textVariants} onClick={handleView}>
+              <motion.button
+                className="resume_button"
+                variants={textVariants}
+                onClick={handleView}
+              >
                 Resume
                 {/* <span> */}
-                  <IoDocumentText className="icon" />
+                <IoDocumentText className="icon" />
                 {/* </span> */}
               </motion.button>
-              {/* <motion.button variants={textVariants}>Contact Me</motion.button> */}
+              <motion.div variants={textVariants} className="hero_social">
+                <a
+                  title="GitHub"
+                  href="https://github.com/Sumit0925"
+                  target="_blank"
+                >
+                  <FaGithub />
+                </a>
+              </motion.div>
+              <motion.div variants={textVariants} className="hero_social">
+                <a
+                  title="LinkedIn"
+                  href="https://www.linkedin.com/in/sumit-angural-249a79275/"
+                  target="_blank"
+                >
+                  <FaLinkedin />
+                </a>
+              </motion.div>
+              <motion.div variants={textVariants} className="hero_social">
+                <a
+                  title="Mail"
+                  href="mailto:smtangural9@gmail.com"
+                  target="_blank"
+                >
+                  <GoMail />
+                </a>
+              </motion.div>
             </motion.div>
             <motion.img
               variants={textVariants}

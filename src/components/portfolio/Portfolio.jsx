@@ -15,18 +15,19 @@ const items = [
   },
   {
     id: 2,
+    title: "E-Gram Panchayat",
+    img: "/E-Gram-Panchayat.png",
+    desc: "Digital Gram Panchayat portal for citizens, staff, and admin. Citizens can apply for documents, check application status, and admins/staff can manage services and process applications.",
+    site:"https://digital-e-gram-panchayat-mojs.onrender.com/",
+    source: "https://github.com/Sumit0925/Digital-E-Gram-Panchayat",
+  },
+  {
+    id: 3,
     title: "Dev Technical",
     img: "/DevTechnical.png",
     desc: "Created a full-stack online Service Website securely using JWT authentication. Integrated Context API for efficient state management across the application, ensuring a seamless user experience.",
     site: "https://dev-technical-project-frontend.onrender.com/",
     source: "https://github.com/Sumit0925/Mern_Porject",
-  },
-  {
-    id: 3,
-    title: "Carrer Launch",
-    img: "/CarrerLaunch.png",
-    desc: "Carrer Launch is a Training and Placement Website for students to remain up to date about placement opportunities. It has easy-to-use layout for better and seamless user experience.",
-    source: "https://github.com/Sumit0925/CarrerLaunch",
   },
   // {
   //   id: 4,

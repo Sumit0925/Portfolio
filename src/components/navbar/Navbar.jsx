@@ -35,9 +35,9 @@ const Navbar = () => {
           </div>
 
           <div className="social">
-            <a title="GitHub" href="https://github.com/Sumit0925" target="_blank">
+            {/* <a title="GitHub" href="https://github.com/Sumit0925" target="_blank">
               <FaGithub />
-            </a>
+            </a> */}
           </div>
         </div>
       </div>
