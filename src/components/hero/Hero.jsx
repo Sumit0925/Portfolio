@@ -53,7 +53,7 @@ const slidingVariant = {
 // };
 
 const handleView = () => {
-  const resumeUrl = "/Resume_Sumit_Upload.pdf"; // Update with the correct path
+  const resumeUrl = "/Sumit_Resume_FullStack.pdf"; // Update with the correct path
   window.open(resumeUrl, "_blank");
 };
 
@@ -93,6 +93,7 @@ const Hero = () => {
                   title="GitHub"
                   href="https://github.com/Sumit0925"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   <FaGithub />
                 </a>
@@ -102,6 +103,7 @@ const Hero = () => {
                   title="LinkedIn"
                   href="https://www.linkedin.com/in/sumit-angural-249a79275/"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   <FaLinkedin />
                 </a>
@@ -111,6 +113,7 @@ const Hero = () => {
                   title="Mail"
                   href="mailto:smtangural9@gmail.com"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   <GoMail />
                 </a>
